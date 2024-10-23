@@ -23,10 +23,10 @@ public class Main {
                     int conRating = Integer.parseInt(rating);
                     System.out.print("Enter which season: ");
                     String season = in.nextLine();
-                    int conSeason = Integer.parseInt(rating);
+                    int conSeason = Integer.parseInt(season);
                     System.out.print("Enter how many episodes: ");
                     String episodes = in.nextLine();
-                    int conEpisodes = Integer.parseInt(rating);
+                    int conEpisodes = Integer.parseInt(episodes);
                     // add the show
                     tv.createCustomData(conRating, name, conSeason, conEpisodes);
                 }  else if (input.equalsIgnoreCase("N")) {
@@ -35,7 +35,6 @@ public class Main {
             } catch(Exception e) {
                 System.out.println("ERR invalid input!");
             }
-
         }
     }
 }

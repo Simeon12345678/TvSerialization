@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 import java.io.*;
-import java.util.Scanner;
 import java.util.Random;
 
 // collection of tv shows from TvSeries stores all TvSeries inside an ArrayList
@@ -54,6 +53,7 @@ public class TvMain {
         shows.add(tv);
         tv.changeRating(rating);
         tv.addEpisodes(seasons, episodes);
+        tv.printInfo();
     }
 
     void createData() {
@@ -67,6 +67,7 @@ public class TvMain {
             tvSeries.changeRating(rand.nextInt(10));
             // add episodes between 1 and 25 and seasons between 1 and 5
             tvSeries.addEpisodes((rand.nextInt((5 - 1) + 1) + 1), (rand.nextInt((25 - 1) + 1) + 1));
+            tvSeries.printInfo();
         }
     }
 }
